@@ -17,7 +17,8 @@ public class RentPage {
     private final By rentComment = By.xpath(".//input[@placeholder='Комментарий для курьера']");
     private final By rentButton = By.xpath(".//button[(@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Заказать')]"); //кнопка заказать
     private final By modalOrderWindow = By.xpath(".//div[contains(@class, 'Order_ModalHeader')]"); // Модальное окно
-    private final By orderButtonYes = By.xpath(".//*[@id='root']/div/div[2]/div[5]/div[2]/button[2]"); //Кнопка да в модальном окне
+    private final By orderButtonYes = By.xpath(".//button[(@class='Button_Button__ra12g Button_Middle__1CSJM' and text()='Да')]"); //Кнопка да в модальном окне
+
     public boolean displayedOrderWindow() {
         return driver.findElement(modalOrderWindow).isDisplayed();
     } //модальное окно заказ формлен

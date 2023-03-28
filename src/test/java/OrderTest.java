@@ -6,7 +6,7 @@ public class OrderTest extends CommonBaseTest {
 
     // Тест заказа через кнопку вверху страницы
     @Test
-    public void OrderingByHeaderOrderButton() {
+    public void orderingByHeaderOrderButton() {
         new MainPage(driver)
                 .openSite()
                 .clickCookieButton()
@@ -32,7 +32,7 @@ public class OrderTest extends CommonBaseTest {
     }
     //Тест заказа через кнопку в середине страницы
     @Test
-    public void OrderingByBelowOrderButton() {
+    public void orderingByBelowOrderButton() {
         new MainPage(driver)
                 .openSite()
                 .clickCookieButton()
